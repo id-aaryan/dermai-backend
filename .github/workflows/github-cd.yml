@@ -63,3 +63,7 @@ jobs:
           heroku_app_name: $APP_NAME
           heroku_email: $HEROKU_EMAIL
           # usedocker: true
+
+      - run: |
+          git remote add heroku git@heroku.com:secure-forest-32038.git
+          git push heroku master
