@@ -71,4 +71,4 @@ jobs:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: $APP_NAME
           heroku_email: $HEROKU_EMAIL
-          dontuseforce: 1
+          dontuseforce: true
