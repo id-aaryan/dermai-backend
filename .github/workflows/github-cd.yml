@@ -65,5 +65,6 @@ jobs:
           # usedocker: true
 
       - run: |
-          git remote add heroku git@heroku.com:secure-forest-32038.git
+          git config user.name "id-aaryan" && git config user.email "aaryanm02@gmail.com" 
+          git remote add heroku git@heroku.com:<HEROKU_APP_NAME>.git
           git push heroku master
