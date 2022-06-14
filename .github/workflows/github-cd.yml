@@ -8,9 +8,9 @@ on:
 env:
   HEROKU_EMAIL: ${{ secrets.EMAIL }}
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-  APP_NAME: ${{ 'waterfall-skdfnodfnsdi' }}
-  DOCKER_SECRET: ${{ secrets.DOCKER_SECRET }}
-  DOCKER_ID: ${{ secrets.DOCKER_ID }}
+  APP_NAME: ${{ 'dermai-server' }}
+  # DOCKER_SECRET: ${{ secrets.DOCKER_SECRET }}
+  # DOCKER_ID: ${{ secrets.DOCKER_ID }}
     
 jobs:
   setup:
@@ -62,4 +62,4 @@ jobs:
           heroku_api_key: $HEROKU_API_KEY
           heroku_app_name: $APP_NAME
           heroku_email: $HEROKU_EMAIL
-          usedocker: true
+          # usedocker: true
